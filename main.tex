@@ -1,0 +1,34 @@
+\documentclass{report}
+
+\begin{document}
+    \input{content/title}
+    \newpage
+    \thispagestyle{empty}
+    \tableofcontents
+    \thispagestyle{empty}
+    \newpage
+    \thispagestyle{empty}
+    \listoffigures
+    \newpage
+    \thispagestyle{empty}
+    \listoftables
+    \newpage
+    \renewcommand{\thepage}{\arabic{page}}
+    \setcounter{page}{1}
+    \input{content/s1}
+    \newpage
+    \input{content/s2}
+    \newpage
+    \input{content/tmp}
+    \newpage
+    \clearpage
+    \addcontentsline{toc}{section}{\large{Referencias}}
+    \bibliographystyle{unsrt}
+    \bibliography{content/references}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Use '\newSection{Title}' instead of '\section{Title}'       %%%
+%%% Use '\newSubSection{Title}' instead of '\subsection{Title}' %%%
+%%% Don't use chapters                                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

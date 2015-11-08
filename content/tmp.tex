@@ -1,0 +1,34 @@
+\newSection{Section}
+
+\begin{itemize}
+    \item Referencia a cita bibliográfica  \cite{c:my_cite1} \cite{c:my_cite2}.
+    \item Referencia a Ecuación \ref{e:my_ecuation}.
+    \item Referencia a Figura \ref{f:my_figure}.
+    \item Referencia a Tabla \ref{t:my_table}.
+\end{itemize}
+
+\begin{equation}
+	\label{e:my_ecuation}
+	S = \sum_{i=1}^n(x_{i}+y_{i})^2
+\end{equation}
+
+\begin{figure}[ht!]
+    \begin{center}
+        \includegraphics[width=0.35\textwidth]{img/logo_usach.pdf}
+        \caption{Logo Universidad de Santiago.}
+        \label{f:my_figure}
+    \end{center}
+\end{figure}
+
+\begin{table}[!ht]
+    \begin{center}
+        \caption{Tabla de muestra}
+        \label{t:my_table}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Columna A & Columna B & Columna C \\ \hline \hline
+            1.a & 1.b & 1.c \\ \hline
+            2.a & 2.b & 2.c \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
